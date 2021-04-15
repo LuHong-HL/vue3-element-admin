@@ -15,6 +15,7 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-extra-semi': 'off',
-    'semi': ['off']
+    'semi': ['error', 'never'], // 分号
+    'comma-dangle': ['error', 'never'] // 拖尾逗号
   },
 };
